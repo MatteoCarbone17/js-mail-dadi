@@ -7,6 +7,28 @@ Chiedi all’utente la sua email, controlla che sia nella lista di chi può acce
 
 
 
+
+const userButtonElement = document.getElementById('button');
+
+
+userButtonElement.addEventListener('click', function(){
+
+    let numberUser = Math.floor(Math.random()*7);
+    let numberComputer = Math.floor(Math.random()*7);
+    
+    if (numberUser>numberComputer){
+        console.log('punti fatti '+ numberUser +' hai vinto!')
+        console.log('punti fatti dal pc '+ numberComputer)
+    } else{
+        console.log('punti fatti dal pc '+ numberComputer)
+        console.log('punti fatti '+ numberUser +' hai perso')
+    }
+     
+});
+
+
+
+
 let numberUser = Math.floor(Math.random()*7);
 let numberComputer = Math.floor(Math.random()*7);
 
