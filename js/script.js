@@ -8,6 +8,7 @@ Chiedi all’utente la sua email, controlla che sia nella lista di chi può acce
 
 
 
+
 const userButtonElement = document.getElementById('button');
 
 
@@ -17,12 +18,41 @@ userButtonElement.addEventListener('click', function(){
     let numberComputer = Math.floor(Math.random()*7);
     
     if (numberUser>numberComputer){
-        document.getElementById('output').innerHTML =('punti fatti '+ numberUser +' hai vinto!'+' punti fatti dal pc '+ numberComputer );
+        document.getElementById('output').innerHTML =('Punti fatti '+ numberUser +' hai vinto!'+ ' punti fatti dal pc '+ numberComputer );
 
     } else{
-        document.getElementById('output').innerHTML =('punti fatti '+ numberUser +' hai perso' +' punti fatti dal pc '+ numberComputer );
+        document.getElementById('output').innerHTML =('Punti fatti '+ numberUser +' hai perso!' + ' punti fatti dal pc '+ numberComputer );
     }
      
 });
 
 
+
+const email = [
+    'mrwhite@reservoirdogs.com',
+    'mrorange@reservoirdogs.com',
+    'mrblonde@reservoirdogs.com',
+    'mrpink@reservoirdogs.com',
+    'mrbrown@reservoirdogs.com',
+    'mrblue@reservoirdogs.com',
+];
+
+console.log(email);
+
+let userButtonEmailElement = document.getElementById('emailbtn');
+let userEmailElement = document.getElementById('useremail');
+
+
+
+userButtonEmailElement.addEventListener('click', function(){
+ 
+    let emailvalue = userEmailElement.value;
+
+    if (emailvalue == email.length ) {
+        document.getElementById('secondoutput').innerHTML = ('Benvenuto nel club')
+    } else{
+        document.getElementById('secondoutput').innerHTML = ('ciaone') 
+    }
+   
+     
+});

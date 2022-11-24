@@ -13,22 +13,38 @@
 <body>
     <header></header>
     <main>
-        <section class="container">
-            <div class="row">
-                <div class="col-4">
+        <section class="container mb-5">
+            <div class="row text-center">
+                <div class="col">
                     <h1 class="fw-semibold mb-5">
-                        Number Generator
+                        BugDice
                     </h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <a href="#" id="button" class="btn btn-primary">Lancia il tuo bugdice</a>
+                </div>
                 <div class="col-3">
-                    <a href="#" id="button" class="btn btn-primary">genera un numero</a>
                     <div id="output" class="fs-3 fws">
-                        <div id="loser"  class="fs-3 fws">
-
-                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="fw-semibold mb-5">
+                        Lista Email 
+                    </h1>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    <label for="email">Inserisci la tua email</label>
+                    <input type="text" id="useremail" >
+                    <a href="#" id="emailbtn" class="btn btn-success">Cerca</a>
+                    <div id="secondoutput"></div>
                 </div>
             </div>
         </section>
