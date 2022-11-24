@@ -17,26 +17,12 @@ userButtonElement.addEventListener('click', function(){
     let numberComputer = Math.floor(Math.random()*7);
     
     if (numberUser>numberComputer){
-        console.log('punti fatti '+ numberUser +' hai vinto!')
-        console.log('punti fatti dal pc '+ numberComputer)
+        document.getElementById('output').innerHTML =('punti fatti '+ numberUser +' hai vinto!'+' punti fatti dal pc '+ numberComputer );
+
     } else{
-        console.log('punti fatti dal pc '+ numberComputer)
-        console.log('punti fatti '+ numberUser +' hai perso')
+        document.getElementById('output').innerHTML =('punti fatti '+ numberUser +' hai perso' +' punti fatti dal pc '+ numberComputer );
     }
      
 });
 
-
-
-
-let numberUser = Math.floor(Math.random()*7);
-let numberComputer = Math.floor(Math.random()*7);
-
-if (numberUser>numberComputer){
-    console.log('punti fatti '+ numberUser +' hai vinto!')
-    console.log('punti fatti dal pc '+ numberComputer)
-} else{
-    console.log('punti fatti dal pc '+ numberComputer)
-    console.log('punti fatti '+ numberUser +' hai perso')
-}
 
