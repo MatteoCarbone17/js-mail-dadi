@@ -14,8 +14,8 @@ const userButtonElement = document.getElementById('button');
 
 userButtonElement.addEventListener('click', function(){
 
-    let numberUser = Math.floor(Math.random()*7);
-    let numberComputer = Math.floor(Math.random()*7);
+    let numberUser = Math.floor(Math.random()*6) + 1;
+    let numberComputer = Math.floor(Math.random()*6) + 1;
     
     if (numberUser>numberComputer){
         document.getElementById('output').innerHTML =('Punti fatti '+ numberUser +' hai vinto!'+ ' punti fatti dal pc '+ numberComputer );
@@ -37,7 +37,7 @@ const email = [
     'mrblue@reservoirdogs.com',
 ];
 
-console.log(email);
+
 
 let userButtonEmailElement = document.getElementById('emailbtn');
 let userEmailElement = document.getElementById('useremail');
@@ -46,13 +46,18 @@ let userEmailElement = document.getElementById('useremail');
 
 userButtonEmailElement.addEventListener('click', function(){
  
-    let emailvalue = userEmailElement.value;
+    let emailValue = userEmailElement.value;
 
-    if (emailvalue == email.length ) {
+    for (let i = 0; i < email.length; i++) {
+        
+    console.log(email[i]); 
+    
+    if ( emailValue == email[i] ) {
         document.getElementById('secondoutput').innerHTML = ('Benvenuto nel club')
     } else{
         document.getElementById('secondoutput').innerHTML = ('ciaone') 
     }
    
+}
      
 });
